@@ -996,7 +996,7 @@ main {
 /* Medium Devices */
 @media screen and (max-width: 768px) {
     .about__img {
-        width: 250px;
+        display: none;
     }
 
     .qualification__container {
