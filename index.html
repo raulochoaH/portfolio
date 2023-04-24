@@ -7,38 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="/style.css">
-    <title>Responsive portfolio website</title>
+    <title>Raúl Ochoa - Website</title>
 </head>
 
 <body>
     <!-- SIDEBAR -->
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
     <aside class="sidebar" id="sidebar">
         <nav class="nav">
-            <div class="nav__logo">
-                <a href="index.html" class="nav__logo-text">m</a>
-            </div>
 
             <div class="nav__menu">
                 <div class="menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link active-link">Home</a>
+                            <a href="#home" class="nav__link active-link">Inicio</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
+                            <a href="#about" class="nav__link">Sobre mí</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#skills" class="nav__link">Skills</a>
+                            <a href="#skills" class="nav__link">Habilidades</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#work" class="nav__link">Work</a>
+                            <a href="#work" class="nav__link">Portafolio</a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="btn__share">
-                <i class='uil uil-share-alt social__share'></i>
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
             </div>
         </nav>
     </aside>
@@ -61,57 +61,44 @@
                         <a href="https://twitter.com/Raulochoa_" target="_blank" class="home__social-link">
                             <i class='uil uil-twitter'></i>
                         </a>
+                        <a href="https://github.com/raulochoaH" target="_bl" class="home__social-link">
+                            <i class='uil uil-github'></i>
+                        </a>
                     </div>
                 </div>
 
                 <img src="assets/home-img.png" alt="" class="home__img">
 
+                <div class="home__container-data">
                 <div class="home__data">
-                    <h1 class="home__title">Hi, I am Raul</h1>
-                    <h3 class="home__subtitle">Frontend Developer</h3>
-                    <p class="home__description">High level experience in web design and development knowledge,
-                        producing quality work</p>
+                    <h1 class="home__title">Hola, soy Raúl</h1>
+                    <h3 class="home__subtitle">Full Stack Developer</h3>
+                    <p class="home__description">Como Full Stack Developer, tengo experiencia en el desarrollo tanto del frontend como del backend de aplicaciones web, utilizando herramientas como React, Node.js y MongoDB. Mi principal motivación está en lograr que cada proyecto sea desarrollado de manera integral, integrando todas sus partes de manera eficiente y efectiva.</p>
                     <a href="#about" class="button">
                         <i class='uil uil-user button__icon'></i>
-                        More About Me
+                        Sobre mí.
                     </a>
                 </div>
 
-                <div class="my__info">
-
-                    <div class="info__item">
-                        <i class="uil uil-facebook-messenger info__icon"></i>
-
-                        <div>
-                            <h3 class="info__title">Messenger</h3>
-                            <span class="info__subtittle">user.fb1234</span>
-                        </div>
-                    </div>
-
-                    <div class="info__item">
-                        <i class="uil uil-envelope-edit info__icon"></i>
-
-                        <div>
-                            <h3 class="info__title">Email</h3>
-                            <span class="info__subtittle">user@gmail.com</span>
-                        </div>
-                    </div>
-
+                <div class="home__container--img">
+                    <img src="/assets/photo-profile.png" alt="" class="profile__img">
                 </div>
+                </div>
+
             </div>
         </section>
 
         <!-- ABOUT -->
         <section class="about section" id="about">
-            <h2 data-heading="My Intro" class="section__title">Sobre mí</h2>
+            <h2 class="section__title">Sobre mí</h2>
 
             <div class="about__container container grid">
-                <img src="assets/about-img.jpg" alt="" class="about__img">
+                <img src="assets/laptop-image.png" alt="" class="about__img">
 
                 <div class="about__data">
-                    <h3 class="about__heading">Hola, soy Raul Ochoa</h3>
+                    <h3 class="about__heading">Hola, soy Raúl Ochoa</h3>
                     <p class="about__description">Un desarrollador Full Stack de Venezuela. Me especializo en el stack MERN y mi enfoque principal es el frontend. <br> <br>Mi pasión por la tecnología comenzó desde muy joven y me llevó a explorar diferentes lenguajes de programación y tecnologías. Actualmente, estoy en proceso de graduarme en Derecho, lo que me ha ayudado a desarrollar habilidades analíticas y de resolución de problemas que aplico en mi carrera como desarrollador. <br><br> Mi objetivo como desarrollador es crear aplicaciones web atractivas, eficientes y escalables, que brinden soluciones efectivas a problemas reales. Mi experiencia en el stack MERN me permite abordar proyectos de manera integral y brindar soluciones completas a los problemas.<br><br>¡Gracias por visitar mi sitio web! Si estás buscando un desarrollador Full Stack para tu proyecto, no dudes en contactarme.</p>
-                    <a href="#contact" id="contact" class="button" class="uil uil-navigator button__icon">Contact Me</a>
+                    <a href="#contact" id="contact" class="button" class="uil uil-navigator button__icon">Contáctame</a>
                 </div>
             </div>
         </section>
@@ -119,7 +106,7 @@
         <!-- Skills -->
 
         <section class="skills section" id="skills">
-            <h2 data-heading="My Abilities" class="section__title">My Experience</h2>
+            <h2 data-heading="Mis habilidades" class="section__title">Mi experiencia</h2>
 
             <div class="skills__container container grid">
 
@@ -130,7 +117,6 @@
 
                         <div>
                             <h1 class="skills__title">Frontend Developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
                         </div>
 
 
@@ -145,7 +131,6 @@
 
                         <div>
                             <h1 class="skills__title">Backend developer</h1>
-                            <span class="skills__subtitle">More than 4 years</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -241,7 +226,7 @@
 
         <!-- WORK -->
         <section class="work section" id="work">
-            <h2 data-heading="My Portfolio" class="section__title">Recent work</h2>
+            <h2 data-heading="Mi portafolio" class="section__title">Trabajos recientes</h2>
 
             <div class="work__filters">
                 <span class="work__item active-work">All</span>
@@ -417,6 +402,9 @@
                         </a>
                         <a href="https://www.twitter.com/" target="_blank" class="footer__social">
                             <i class='uil uil-twitter'></i>
+                        </a>
+                        <a href="https://github.com/raulochoaH" target="_bl" class="home__social-link">
+                            <i class='uil uil-github'></i>
                         </a>
 
                     </div>
