@@ -330,7 +330,9 @@ main {
 
 
 .home__title {
-    font-size: var(--biggest-font-size)
+    font-size: var(--biggest-font-size);
+
+    margin: 50px 0 30px
 }
 
 .home__subtitle {
@@ -1082,6 +1084,7 @@ main {
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    padding: 7rem 0 2rem;
     }
 
     .home__container {
@@ -1093,19 +1096,22 @@ main {
     }
 
     .home__social {
-        left: 8rem;
-        flex-direction: row;
-        row-gap: 2rem;
+        left: initial;
+        right: -1rem;
+        top: -5rem;
+        flex-direction: column;
+        row-gap: 3.5rem;
     }
 
 
     .home__social-follow {
         font-size: var(--smaller-font-size);
+        transform: rotate(90deg);
     }
 
     .home__social-links {
-        flex-direction: row;
-        row-gap: .10rem;
+        flex-direction: column;
+        row-gap: .25rem;
     }
 
     .home__social-link {
