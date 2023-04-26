@@ -67,8 +67,8 @@ document.querySelector(".portfolio__popup-close").addEventListener("click", togg
 
 function portfolioItemDetails(portfolioItem) {
   document.querySelector(".pp__thumbnail img").src = portfolioItem.querySelector(".work__img").src;
-  document.querySelector(".portfolio__popuo-subtitle span").innerHTML = portfolioItem.querySelector(".work__title").innerHTML;
-  document.querySelecotr(".portfolio__popup-body").innetHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML;
+  // document.querySelector(".portfolio__popup-subtitle span").innerHTML = portfolioItem.querySelector(".work__title").innerHTML;
+  document.querySelector(".portfolio__popup-body").innerHTML = portfolioItem.querySelector(".portfolio__item-details").innerHTML;
 }
 
 /* Scroll Sections active */
