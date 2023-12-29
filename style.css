@@ -631,6 +631,9 @@ main {
     border-radius: .5rem;
 }
 
+.landing__card {
+    grid-area: 2 / 4 / 2 / 1;
+}
 
 .portfolio__item-details {
     display: none;
